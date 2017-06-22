@@ -2,17 +2,18 @@
 /*COLOR PALETTE:
 Color.adobe.com/explore
 
+*Primary*
+crimson: #722
+Yellowey: #544343
+Greyish?: #fdd7b4
 
-#dcdcdc
-#722
-#544343
-#fdd7b4
-#655
+*Secondary*
+Medium Green: #dcdcdc
+unknown: #655
 */
 
 /*FONT TYPEFACES:
 Type-scale.com
-
 
 font-family: 'Abril Fatface', cursive;
 font-family: 'Antic Didone', serif;
@@ -23,24 +24,40 @@ font-family: 'Bentham', serif;
 */
 
 /*VERTICAL SPACING:
-http://basehold.it/32*/
+http://basehold.it/32
+*/
+
+/*LETTER SPACING
+letter-spacing: -0.03em;
+*/
 
 
+/*Transitions:*/
+
+* {
+    transition: all 0.35s ease;
+}
+
+/* Basic Elements */
 h1, button {
-	
 	font-family: 'Abril Fatface' !important;
 	color: #dcdcdc !important;
 	text-shadow: 2px 2px 3px rgba(20,20,20,.7);
-	font-size: 8.55em !important
+	font-size: 8.55em !important;
+    letter-spacing: -0.03em;
 	
 }
 
 h2, li, p {
 	font-family: 'Antic Didone', serif !important;
 }
+p {
+    font-weight: 800 !important;
+}
 
 body, h3, h4, h5 {
 	font-family: 'GFS Didot', serif !important;
+    letter-spacing: -0.03em;
 
 }
 
@@ -71,13 +88,7 @@ strong {
 .jumbotron h1 {
 	margin-top: .4em;
 	padding-top:.4em;
-}
-
-
-.fa {
-
-	color: #544343 !important;
-	text-shadow: 2px 2px 9px #cecece;
+    margin-bottom: .7em;
 }
 
 .shady-color {
@@ -103,22 +114,24 @@ strong {
 	text-shadow: 2px 2px 9px #cecece !important;
 	font-size: 2.65em;
 	font-weight:600;
-
 }
 
-
-.intro-jumbo {
-
+h2.row-head {
+    font-variant: small-caps !important;
 }
 
-
+.menu {
+    z-index: 1;
+}
 
 .nav ul {
     *zoom:1;
     list-style:none;
     margin:0;
-    padding:1%;
+    padding:1% auto;
     background:#655;
+    background-color: rgba(161,76,43,.89);
+
 }
 
 .nav ul:before,.nav ul:after {
@@ -135,9 +148,9 @@ strong {
 .nav a {
     display:block;
     padding:10px 20px;
-    line-height:1.2em;
+    line-height:2.3em;
     color:#fff;
-    border-left:1px solid #595959;
+    /*border-left:1px solid #595959;*/
 }
 .nav a:hover {
     text-decoration:none;
@@ -237,7 +250,8 @@ font-weight: 200;
 	margin-top: 0;
 	margin-bottom: 2.5em;
 	border: 2px solid black;
-	border-top: 1px solid black;;
+	border-top: 1px solid black;
+    font-weight: 800 !important;
 	/*	border:15px solid transparent;
     	border-image: url(img/border.png) 30 30 round;*/
 }
@@ -275,7 +289,8 @@ body {
 
 p {
 	margin-bottom: 1.3em;
-line-height: 1.7em
+line-height: 1.7em;
+font-weight: 800 !important;
 }
 
 h1, h2, h3, h4 {
@@ -312,6 +327,11 @@ small, .font_small {font-size: 0.707em;}
 background-color: #544343;
 color:#fff;
 }
+.black-bg h3,
+body > div.container > div:nth-child(5) > div > div.col-md-8 > div > div h3,
+body > div.container > div:nth-child(5) > div > div.col-md-8 > div > div h4 {
+font-family: 'Antic Didone', serif !important;
+}
 
 div.row > div.black-bg > p > a {
 color:#fff;
@@ -320,9 +340,23 @@ background: #fdd7b4;
 }
 footer {
 	padding:5%;
-background: #fdd7b4;
-max-width: 100%;
-margin: 1% auto 0
+    background-color: rgba(161,76,43,.8);
+    max-width: 100%;
+    margin: 1% auto 0;
+    color: #fff;
+    font-size: 1.05em
+}
+
+footer i {
+    padding:1% 1.25% 1% 0;
+    color: #fff;
+}
+footer a {
+    margin: 1% .8% 0 0;
+}
+
+* {
+    text-decoration: none !important
 }
 
 #large-bg {
@@ -335,15 +369,122 @@ margin: 1% auto 0
 	padding:.5% 20%;
 }
 
-
 .float-right {
-	float: right;
+	float: right !important;
 }
 
-p.float-right > a {
+div.container > div.row > div > p > a,
+p.float-right > a,
+body > div.container > div:nth-child(5) > 
+div > div.col-md-8 > div > div > p > a  {
 	background: #fdd7b4
 }
-p.float-right > a:hover {
-	background-color: #722;
+div.container > div.row > div > p > a:hover,
+p.float-right > a:hover,
+div.col-md-4.black-bg > p  a:hover,
+body > div.container > div:nth-child(5) > 
+div > div.col-md-8 > div > div > p > a:hover  {
+	background-color: #5ECDC5;
 	color: #fdd7b4
 }
+
+body > div:nth-child(2) > div > p > a:hover {
+ color: #222   
+}
+
+.rounded-img {
+    border-radius: 60%;
+    border:5px solid #fdd7b4;
+    max-width: 100%;
+}
+
+.smallcaps {
+    font-variant: small-caps !important
+}
+
+.dropcap {
+  color: #903;
+  float: left;
+  font-family: Georgia;
+  font-size: 2.95em;
+  line-height: 30px;
+  padding-top: 6px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+
+/*MEDIA QUERIES*/
+
+
+/*Tablet*/
+@media only screen and (max-width : 1024px) {
+
+    .container {
+        width: 85%
+    }
+
+    .jumbotron h1 {
+     padding-top: .4em; 
+    font-size: 6.8em !important;
+
+}
+
+
+}
+
+/*iPhone*/
+@media only screen and (max-width: 480px) {
+
+.jumbotron h1 {
+     padding-top: .4em; 
+    font-size: 5.3em !important;
+    padding-bottom: .4em
+
+}
+
+body > div.jumbotron.second-p > div > div > p {
+    font-size: 1.25em !important;
+    padding: 1% 4%;
+}
+
+div.row > div.black-bg > p > a {
+    margin-bottom: 5% !important;
+}
+
+.container {
+    width: 95%
+}
+
+    }
+
+
+
+
+
+
+
+/*Navbar Collapse Styles*/
+
+i.glyphicon {
+    font-size: 4em;
+  color:   rgba(150,150,100,.95)
+
+}
+
+
+.navbar-toggle {
+  background-color: #ddd
+}
+
+.caret {
+  background-color: transparent;
+  text-shadow: 1px 1px 5px black;
+  color: white
+}
+
+.dropdown-menu {
+  background-color: rgba(150,150,100,.95);
+}
+
+

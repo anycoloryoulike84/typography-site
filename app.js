@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
-
+// Sticky Header Code:
 var num = 150; //number of pixels before modifying styles
 
 $(window).bind('scroll', function () {
@@ -12,5 +12,6 @@ $(window).bind('scroll', function () {
     }
 });
 
-//USE SCROLL WHEEL FOR THIS FIDDLE DEMO
+
+
 });

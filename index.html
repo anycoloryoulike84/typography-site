@@ -3,6 +3,9 @@
   <head>
     <title>Typography Site Example</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -10,10 +13,40 @@
 
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <!-- <link rel="stylesheet" href="http://basehold.it/32"> -->
   </head>
   
   <body>
+
+<!-- 
+  <div id="navbar" class="nav menu navbar navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+           <a href="#" class="navbar-brand">Beerin' Berkeley</a>
+              
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+      </div>
+      <ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="home-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#" data-target="about.html" data-toggle="dropdown" >About <span class="caret"></span></a>
+          <ul class="dropdown-menu text-center">
+            <li><a href="#">Happy Hour</a></li>
+            <li><a href="#">Blog</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Specials</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div> -->
+  
   <nav id="navbar" class="nav menu">
     <ul>
        <li><a href="#" class="logo"><img src="img/logo.png" width="30px"/></a></li>
@@ -61,7 +94,7 @@
 <div class="jumbotron second-p">
   <div class="container">
     <div class="row">
-            <p class="intro-jumbo">This is an application to help beer lovers find <em><strong><span class="it-color">simply</span></strong></em> the best beers on tap at the bars nearby! <strong><span class=" it-color ">Search below to find types of beers</span></strong> filtered by  <em><strong><span class="it-color">ABV, Brewery, Location, Price, and beerType</span></strong></em>. Enjoy!</p>
+            <p class="intro-jumbo"><span class="dropcap it-color">The</span> application to help beer lovers find <em><strong><span class="it-color">simply</span></strong></em> the best beers on tap at the bars nearby! <strong><span class=" it-color ">Search below to find types of beers</span></strong> filtered by  <em><strong><span class="it-color">ABV, Brewery, Location, Price, and beerType</span></strong></em>. Enjoy!</p>
     </div>
   </div>
 </div>
@@ -76,29 +109,46 @@
         <h2 class="row-head inline"> Bars</h2>
           <br><br>
           
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><span class="dropcap it-color">D</span><span class="smallcaps">onec id elit non mi porta gravida at eget metus.</span> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-4">
           <p  class="inline"><i class="fa fa-beer fa-2x inline" aria-hidden="true"> </i></p> 
           <h2 class="row-head inline"> Beers</h2>
           <br><br>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><span class="dropcap it-color">D</span><span class="smallcaps">onec id elit non mi porta gravida at eget metus.</span> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
        </div>
         <div class="col-md-4">
           <p  class="inline"><i class="fa fa-heart-o fa-2x inline" aria-hidden="true"> </i></p> 
           <h2 class="row-head inline"> Happy Hours</h2>
           <br><br>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><span class="dropcap it-color">D</span><span class="smallcaps">onec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</span> Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
         </div>
       </div>
 
       <hr>
 
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <p><img class="rounded-img" src="img/8.jpeg"></p>
+    </div>
+    <div class="col-md-6">
+      <p><img class="rounded-img" src="img/5.jpeg"></p>
+    </div>
+    <!-- <div class="col-md-6">
+      <p><a class="btn btn-secondary">Click Me</a></p>
+    </div>
+    <div class="col-md-6">
+      <p><a class="btn btn-secondary">Click Me</a></p>
+    </div> -->
+  </div>
+  
+</div>
 
-
+<hr>
 
   <div class="container">
       <div class="row row-bg2">
@@ -108,8 +158,8 @@
                      <span id="large-bg2"></span>
                      <h3>Heading</h3>
                      <h4>Sub-Heading</h4>
-                      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                      <p class="float-right"><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                      <p><span class="dropcap">&ldquo;D</span>onec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui<span class="dropcap float-right">.&rdquo;</span></p>
+                      <p class=""><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
                       <span id="large-bg"></span>
                   </div>
                    <!-- <div class="col-md-4">
@@ -126,10 +176,10 @@
 
         <div  class="col-md-4  black-bg">
             <h3>Heading</h3>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><span class="dropcap">D</span>onec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
                 <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
                 <h3>Heading</h3>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><span class="dropcap">D</span>onec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
                 <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
         </div>
       </div>
@@ -140,15 +190,15 @@
       <footer>
         <div class="container">
               <p>&copy; Beer The App 2017</p>
-              <p class="inline"><i class="fa fa-facebook fa-2x inline" aria-hidden="true"> </i></p> 
-              <p class="inline"><i class="fa fa-instagram fa-2x inline" aria-hidden="true"> </i></p> 
-              <p class="inline"><i class="fa fa-github fa-2x inline" aria-hidden="true"> </i></p> 
+              <a href="#"><p class="inline"><i class="fa fa-facebook fa-2x inline" aria-hidden="true"> </i></p> </a>
+              <a href="#"><p class="inline"><i class="fa fa-instagram fa-2x inline" aria-hidden="true"> </i></p> </a>
+              <a href="#"><p class="inline"><i class="fa fa-github fa-2x inline" aria-hidden="true"> </i></p> </a>
         </div>
       </footer>
 
     
 
     <script src="app.js"></script>
-  
+
   </body>
 </html>
